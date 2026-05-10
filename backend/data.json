@@ -1,0 +1,241 @@
+{
+  "users": [
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f1000",
+      "username": "recruiter_alice",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "recruiter"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f1001",
+      "username": "recruiter_bob",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "recruiter"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f1002",
+      "username": "recruiter_carol",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "recruiter"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2000",
+      "username": "candidate_john",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2001",
+      "username": "candidate_jane",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2002",
+      "username": "candidate_alex",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2003",
+      "username": "candidate_sarah",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2004",
+      "username": "candidate_mike",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2005",
+      "username": "candidate_emily",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2006",
+      "username": "candidate_david",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2007",
+      "username": "candidate_lisa",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2008",
+      "username": "candidate_tom",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    },
+    {
+      "_id": "663f7b8e1a1b1c1d1e1f2009",
+      "username": "candidate_emma",
+      "password": "$2b$10$II0Tji26VIFP2lfa23Rl3uQwPD70nIkUfCX5CwmCC5RByiURMSYsO",
+      "role": "candidate"
+    }
+  ],
+  "jobs": [
+    {
+      "_id": "763f7b8e1a1b1c1d1e1f3000",
+      "title": "Senior Frontend Developer",
+      "description": "We are looking for an expert in React, Vite, and modern CSS to lead our frontend team.",
+      "requirements": "5+ years experience in React. Strong understanding of state management and performance tuning.",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
+      "createdAt": "2026-05-10T17:19:05.536Z"
+    },
+    {
+      "_id": "763f7b8e1a1b1c1d1e1f3001",
+      "title": "Backend Node.js Engineer",
+      "description": "Join our team to build scalable microservices using Express, MongoDB, and AWS.",
+      "requirements": "3+ years experience with Node.js and MongoDB. Experience with REST APIs.",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
+      "createdAt": "2026-05-09T17:19:05.537Z"
+    },
+    {
+      "_id": "763f7b8e1a1b1c1d1e1f3002",
+      "title": "Full Stack Web Developer",
+      "description": "Looking for a generalist to work on end-to-end features using the MERN stack.",
+      "requirements": "Experience with MongoDB, Express, React, Node.js. Good UI/UX sense.",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1001",
+      "createdAt": "2026-05-08T17:19:05.537Z"
+    },
+    {
+      "_id": "763f7b8e1a1b1c1d1e1f3003",
+      "title": "DevOps Engineer",
+      "description": "We need someone to manage our CI/CD pipelines and AWS infrastructure.",
+      "requirements": "Experience with Docker, Kubernetes, GitHub Actions, and AWS.",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
+      "createdAt": "2026-05-07T17:19:05.537Z"
+    },
+    {
+      "_id": "1360cc8b91f3e3a206744cd2a78",
+      "title": "Software Engineer",
+      "description": "Looking for Software engineer who can help to build new features.",
+      "requirements": "Angular\nAsp.NET Core\nNodejs",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
+      "createdAt": "2026-05-10T17:23:04.692Z"
+    }
+  ],
+  "applications": [
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4001",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2000",
+      "jobId": "763f7b8e1a1b1c1d1e1f3000",
+      "resumeText": "I am a Senior Frontend Developer with 6 years of experience in React, Vite, Redux, and modern CSS architecture. I have led teams of 5 developers.",
+      "attachmentNotes": "Looking forward to this opportunity.",
+      "status": "Hired",
+      "matchScore": 92,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4002",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2001",
+      "jobId": "763f7b8e1a1b1c1d1e1f3000",
+      "resumeText": "I am a backend developer. I know Python, Django, and PostgreSQL. I have never used React.",
+      "attachmentNotes": "I am willing to learn.",
+      "status": "ScreeningRejected",
+      "matchScore": 25,
+      "screeningFeedback": "Candidate lacks the required frontend skills, specifically React and Vite, as outlined in the job description.",
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4003",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2002",
+      "jobId": "763f7b8e1a1b1c1d1e1f3000",
+      "resumeText": "I am a junior frontend dev. I know HTML, CSS, and some React basics.",
+      "attachmentNotes": "",
+      "status": "ScreeningRejected",
+      "matchScore": 45,
+      "screeningFeedback": "Candidate does not meet the 5+ years seniority requirement and lacks advanced state management knowledge.",
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4004",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2003",
+      "jobId": "763f7b8e1a1b1c1d1e1f3000",
+      "resumeText": "React expert with 4 years of experience building high-performance UIs using Vite and Redux.",
+      "attachmentNotes": "Available to start immediately.",
+      "status": "InInterview",
+      "matchScore": 85,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4005",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2004",
+      "jobId": "763f7b8e1a1b1c1d1e1f3000",
+      "resumeText": "Frontend engineer with strong Angular background. Recently started learning React.",
+      "attachmentNotes": "",
+      "status": "Applied",
+      "matchScore": 65,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4006",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2005",
+      "jobId": "763f7b8e1a1b1c1d1e1f3001",
+      "resumeText": "Experienced Backend Engineer. 4 years of Node.js, Express, and MongoDB. Built multiple scalable REST APIs deployed on AWS.",
+      "attachmentNotes": "Ready to join immediately.",
+      "status": "Shortlisted",
+      "matchScore": 88,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4007",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2006",
+      "jobId": "763f7b8e1a1b1c1d1e1f3001",
+      "resumeText": "Full stack developer. Good at Node and React.",
+      "attachmentNotes": "",
+      "status": "InterviewRejected",
+      "matchScore": 75,
+      "interviewFeedbackSummary": "Thank you for your time. While your Node.js skills are solid, we found a gap in advanced MongoDB aggregation knowledge required for this specific role. We encourage you to apply again in the future.",
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4008",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2007",
+      "jobId": "763f7b8e1a1b1c1d1e1f3001",
+      "resumeText": "Java developer looking to switch to Node.js.",
+      "attachmentNotes": "",
+      "status": "ScreeningRejected",
+      "matchScore": 30,
+      "screeningFeedback": "Candidate does not have the required 3+ years of professional Node.js and MongoDB experience.",
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4009",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2008",
+      "jobId": "763f7b8e1a1b1c1d1e1f3001",
+      "resumeText": "Senior Node.js architect. 7 years experience designing distributed systems on AWS with MongoDB and Redis.",
+      "attachmentNotes": "Can lead the backend team.",
+      "status": "InInterview",
+      "matchScore": 98,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "863f7b8e1a1b1c1d1e1f4010",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2009",
+      "jobId": "763f7b8e1a1b1c1d1e1f3001",
+      "resumeText": "Node.js developer. Worked on a few Express projects.",
+      "attachmentNotes": "",
+      "status": "Applied",
+      "matchScore": 60,
+      "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "c2cdc948f04208ecd6c0e5392678",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2000",
+      "jobId": "1360cc8b91f3e3a206744cd2a78",
+      "resumeText": "ASP.NET Core",
+      "attachmentNotes": "",
+      "status": "ScreeningRejected",
+      "matchScore": 30,
+      "screeningFeedback": "The candidate has experience with ASP.NET Core, matching one of the required skills. However, they lack experience in Angular and Node.js, which are essential for building new features as outlined in the job description.",
+      "createdAt": "2026-05-10T17:25:19.981Z"
+    }
+  ]
+}
