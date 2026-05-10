@@ -111,6 +111,14 @@
       "requirements": "Experience with Docker, Kubernetes, GitHub Actions, and AWS.",
       "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
       "createdAt": "2026-05-07T17:19:05.537Z"
+    },
+    {
+      "_id": "1360cc8b91f3e3a206744cd2a78",
+      "title": "Software Engineer",
+      "description": "Looking for Software engineer who can help to build new features.",
+      "requirements": "Angular\nAsp.NET Core\nNodejs",
+      "recruiterId": "663f7b8e1a1b1c1d1e1f1000",
+      "createdAt": "2026-05-10T17:23:04.692Z"
     }
   ],
   "applications": [
@@ -217,6 +225,17 @@
       "status": "Applied",
       "matchScore": 60,
       "createdAt": "2026-05-10T17:19:05.537Z"
+    },
+    {
+      "_id": "c2cdc948f04208ecd6c0e5392678",
+      "candidateId": "663f7b8e1a1b1c1d1e1f2000",
+      "jobId": "1360cc8b91f3e3a206744cd2a78",
+      "resumeText": "ASP.NET Core",
+      "attachmentNotes": "",
+      "status": "ScreeningRejected",
+      "matchScore": 30,
+      "screeningFeedback": "The candidate has experience with ASP.NET Core, matching one of the required skills. However, they lack experience in Angular and Node.js, which are essential for building new features as outlined in the job description.",
+      "createdAt": "2026-05-10T17:25:19.981Z"
     }
   ]
 }

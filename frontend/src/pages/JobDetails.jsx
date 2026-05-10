@@ -64,8 +64,17 @@ const JobDetails = () => {
   return (
     <div>
       <div className="card" style={{ marginBottom: '2rem' }}>
-        <h2>{job.title}</h2>
-        <p style={{ marginTop: '0.5rem', color: 'var(--text-muted)' }}>{job.description}</p>
+        <h2 style={{ color: 'white', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>{job.title}</h2>
+        <div style={{ marginTop: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div>
+            <h4 style={{ color: 'var(--primary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.8rem' }}>Job Description</h4>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6' }}>{job.description}</p>
+          </div>
+          <div>
+            <h4 style={{ color: 'var(--primary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.8rem' }}>Requirements</h4>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', whiteSpace: 'pre-line' }}>{job.requirements}</p>
+          </div>
+        </div>
       </div>
 
       <h3>Ranked Candidates</h3>
