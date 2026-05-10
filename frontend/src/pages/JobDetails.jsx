@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE from '../config';
 
 const JobDetails = () => {
   const { id } = useParams();
@@ -20,10 +21,10 @@ const JobDetails = () => {
 
   const fetchData = async () => {
     try {
-      const jobRes = await axios.get(`http://localhost:5001/api/jobs/${id}`);
+      const jobRes = await axios.get(`${API_BASE}/api/jobs/${id}`);
       setJob(jobRes.data);
       
-      const candidatesRes = await axios.get(`http://localhost:5001/api/jobs/${id}/candidates`);
+      const candidatesRes = await axios.get(`${API_BASE}/api/jobs/${id}/candidates`);
       setCandidates(candidatesRes.data);
     } catch (err) {
       console.error(err);
@@ -32,7 +33,7 @@ const JobDetails = () => {
 
   const updateStatus = async (appId, status) => {
     try {
-      await axios.put(`http://localhost:5001/api/applications/${appId}/status`, { status });
+      await axios.put(`${API_BASE}/api/applications/${appId}/status`, { status });
       fetchData();
     } catch (err) {
       alert('Error updating status');
@@ -43,7 +44,7 @@ const JobDetails = () => {
     e.preventDefault();
     setLoadingFeedback(true);
     try {
-      await axios.post(`http://localhost:5001/api/applications/${rejectModalAppId}/interview-reject`, {
+      await axios.post(`${API_BASE}/api/applications/${rejectModalAppId}/interview-reject`, {
         techScore,
         knowledgeGap,
         additionalComment

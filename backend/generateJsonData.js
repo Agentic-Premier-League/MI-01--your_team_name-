@@ -1,5 +1,5 @@
 const fs = require('fs');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 async function generate() {
   const hashedPwd = await bcrypt.hash('password123', 10);
