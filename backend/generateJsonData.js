@@ -4,10 +4,10 @@ const bcrypt = require('bcrypt');
 async function generate() {
   const hashedPwd = await bcrypt.hash('password123', 10);
 
-  // Generate generic IDs
-  const rIds = Array.from({ length: 3 }, (_, i) => `663f7b8e1a1b1c1d1e1f1r0${i}`);
-  const cIds = Array.from({ length: 10 }, (_, i) => `663f7b8e1a1b1c1d1e1f1c${i.toString().padStart(2, '0')}`);
-  const jIds = Array.from({ length: 4 }, (_, i) => `763f7b8e1a1b1c1d1e1f1j0${i}`);
+  // Use valid hex IDs (0-9, a-f) to avoid any casting issues
+  const rIds = Array.from({ length: 3 }, (_, i) => `663f7b8e1a1b1c1d1e1f100${i}`);
+  const cIds = Array.from({ length: 10 }, (_, i) => `663f7b8e1a1b1c1d1e1f20${i.toString().padStart(2, '0')}`);
+  const jIds = Array.from({ length: 4 }, (_, i) => `763f7b8e1a1b1c1d1e1f300${i}`);
 
   const data = {
     users: [
@@ -61,13 +61,13 @@ async function generate() {
     ],
     applications: [
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g1a', candidateId: cIds[0], jobId: jIds[0],
+        _id: '863f7b8e1a1b1c1d1e1f4001', candidateId: cIds[0], jobId: jIds[0],
         resumeText: 'I am a Senior Frontend Developer with 6 years of experience in React, Vite, Redux, and modern CSS architecture. I have led teams of 5 developers.',
         attachmentNotes: 'Looking forward to this opportunity.',
         status: 'Hired', matchScore: 92, createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g1b', candidateId: cIds[1], jobId: jIds[0],
+        _id: '863f7b8e1a1b1c1d1e1f4002', candidateId: cIds[1], jobId: jIds[0],
         resumeText: 'I am a backend developer. I know Python, Django, and PostgreSQL. I have never used React.',
         attachmentNotes: 'I am willing to learn.',
         status: 'ScreeningRejected', matchScore: 25,
@@ -75,7 +75,7 @@ async function generate() {
         createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g1c', candidateId: cIds[2], jobId: jIds[0],
+        _id: '863f7b8e1a1b1c1d1e1f4003', candidateId: cIds[2], jobId: jIds[0],
         resumeText: 'I am a junior frontend dev. I know HTML, CSS, and some React basics.',
         attachmentNotes: '',
         status: 'ScreeningRejected', matchScore: 45,
@@ -83,26 +83,25 @@ async function generate() {
         createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g1d', candidateId: cIds[3], jobId: jIds[0],
+        _id: '863f7b8e1a1b1c1d1e1f4004', candidateId: cIds[3], jobId: jIds[0],
         resumeText: 'React expert with 4 years of experience building high-performance UIs using Vite and Redux.',
         attachmentNotes: 'Available to start immediately.',
         status: 'InInterview', matchScore: 85, createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g1e', candidateId: cIds[4], jobId: jIds[0],
+        _id: '863f7b8e1a1b1c1d1e1f4005', candidateId: cIds[4], jobId: jIds[0],
         resumeText: 'Frontend engineer with strong Angular background. Recently started learning React.',
         attachmentNotes: '',
         status: 'Applied', matchScore: 65, createdAt: new Date().toISOString()
       },
-      // Job 2 Applications (Node.js)
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g2a', candidateId: cIds[5], jobId: jIds[1],
+        _id: '863f7b8e1a1b1c1d1e1f4006', candidateId: cIds[5], jobId: jIds[1],
         resumeText: 'Experienced Backend Engineer. 4 years of Node.js, Express, and MongoDB. Built multiple scalable REST APIs deployed on AWS.',
         attachmentNotes: 'Ready to join immediately.',
         status: 'Shortlisted', matchScore: 88, createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g2b', candidateId: cIds[6], jobId: jIds[1],
+        _id: '863f7b8e1a1b1c1d1e1f4007', candidateId: cIds[6], jobId: jIds[1],
         resumeText: 'Full stack developer. Good at Node and React.',
         attachmentNotes: '',
         status: 'InterviewRejected', matchScore: 75,
@@ -110,7 +109,7 @@ async function generate() {
         createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g2c', candidateId: cIds[7], jobId: jIds[1],
+        _id: '863f7b8e1a1b1c1d1e1f4008', candidateId: cIds[7], jobId: jIds[1],
         resumeText: 'Java developer looking to switch to Node.js.',
         attachmentNotes: '',
         status: 'ScreeningRejected', matchScore: 30,
@@ -118,13 +117,13 @@ async function generate() {
         createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g2d', candidateId: cIds[8], jobId: jIds[1],
+        _id: '863f7b8e1a1b1c1d1e1f4009', candidateId: cIds[8], jobId: jIds[1],
         resumeText: 'Senior Node.js architect. 7 years experience designing distributed systems on AWS with MongoDB and Redis.',
         attachmentNotes: 'Can lead the backend team.',
         status: 'InInterview', matchScore: 98, createdAt: new Date().toISOString()
       },
       {
-        _id: '863f7b8e1a1b1c1d1e1f1g2e', candidateId: cIds[9], jobId: jIds[1],
+        _id: '863f7b8e1a1b1c1d1e1f4010', candidateId: cIds[9], jobId: jIds[1],
         resumeText: 'Node.js developer. Worked on a few Express projects.',
         attachmentNotes: '',
         status: 'Applied', matchScore: 60, createdAt: new Date().toISOString()
@@ -133,7 +132,7 @@ async function generate() {
   };
 
   fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
-  console.log('data.json generated with 3 recruiters, 10 candidates, 4 jobs, and 10 applications.');
+  console.log('data.json generated with valid hex IDs.');
 }
 
 generate();
