@@ -2,7 +2,7 @@
 
 > An AI-powered hiring platform that automates candidate screening, talent ranking, interview workflows, AI communication, recruitment analytics, and intelligent rejection feedback.
 
-🌐 **Live Demo:** [https://talent-platform-ai.vercel.app](https://talent-platform-ai.vercel.app)
+🌐 **Live Demo:** [https://talent-platform-ai.vercel.app/login](https://talent-platform-ai.vercel.app/login)
 
 ---
 
