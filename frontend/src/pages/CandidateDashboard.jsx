@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { MessageSquare } from 'lucide-react';
+import API_BASE from '../config';
 
 const CandidateDashboard = () => {
   const [jobs, setJobs] = useState([]);
@@ -22,12 +23,12 @@ const CandidateDashboard = () => {
   }, []);
 
   const fetchJobs = async () => {
-    const res = await axios.get('http://localhost:5001/api/jobs');
+    const res = await axios.get(`${API_BASE}/api/jobs`);
     setJobs(res.data);
   };
 
   const fetchMyApplications = async () => {
-    const res = await axios.get('http://localhost:5001/api/applications/my');
+    const res = await axios.get(`${API_BASE}/api/applications/my`);
     setMyApplications(res.data);
   };
 
@@ -35,7 +36,7 @@ const CandidateDashboard = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:5001/api/applications', {
+      await axios.post(`${API_BASE}/api/applications`, {
         jobId: selectedJob._id,
         resumeText,
         attachmentNotes: notes
@@ -61,7 +62,7 @@ const CandidateDashboard = () => {
     setChatLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5001/api/chat', {
+      const res = await axios.post(`${API_BASE}/api/chat`, {
         applicationId: chatAppId,
         message: userMsg.content,
         history: chatMessages

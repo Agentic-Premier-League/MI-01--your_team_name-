@@ -38,3 +38,4 @@ yarn-error.log*
 
 # Optional: Ignore generated seed file if you don't want it in Git (uncomment to apply)
 # backend/data.json
+.vercel

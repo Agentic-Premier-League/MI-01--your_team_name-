@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import API_BASE from '../config';
 
 const RecruiterDashboard = () => {
   const [jobs, setJobs] = useState([]);
@@ -20,8 +21,8 @@ const RecruiterDashboard = () => {
   const fetchData = async () => {
     try {
       const [jobsRes, statsRes] = await Promise.all([
-        axios.get('http://localhost:5001/api/jobs'),
-        axios.get('http://localhost:5001/api/analytics')
+        axios.get(`${API_BASE}/api/jobs`),
+        axios.get(`${API_BASE}/api/analytics`)
       ]);
       setJobs(jobsRes.data);
       setStats(statsRes.data);
@@ -33,7 +34,7 @@ const RecruiterDashboard = () => {
   const handleCreateJob = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5001/api/jobs', { title, description, requirements });
+      await axios.post(`${API_BASE}/api/jobs`, { title, description, requirements });
       setTitle('');
       setDescription('');
       setRequirements('');
