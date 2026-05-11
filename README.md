@@ -201,7 +201,9 @@ PORT=5001
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
-USE_JSON_DB=true   # Set to 'false' to use MongoDB
+USE_JSON_DB=true   # Locally, you can test using MongoDB by setting this to 'false'.
+                    # However, due to MongoDB Atlas IP whitelisting restrictions,
+                    # you can use the local JSON file for data storage by keeping this 'true'.
 ```
 
 ### Seed Dummy Data
